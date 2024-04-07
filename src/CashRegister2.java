@@ -24,11 +24,8 @@ public class CashRegister2
     private static final int ITEM_MAX_AMOUNT = 10;
 
     public static void main(final String args[]) {
-        //items[0] = itemId, items[1] = itemCount, items[2] = itemPrice
         int[][] items = new int[10][3];
         Date[] salesDate = new Date[10];
-        //sales[0] = itemId, sales[1] = numberOfItems
-        // sales[2] = sum, here sum = numberOfItems *itemPrice
         int[][] sales = new int[1000][3];
         while (true) {
             int itemId = 1000;
@@ -52,7 +49,7 @@ public class CashRegister2
                     itemId = input();
                     System.out.println("Enter the amount you want to sell");
                     int amountToSell = input();
-                    int result = sellItem(sales, salesDate, itemId, amountToSell, items);
+                    int result = sellItem(sales, salesDate, items, itemId, amountToSell);
                     if (result == -1) {
                         System.out.println("Could not find item, please try again!");
                     } else if (result > 0) {
@@ -90,6 +87,7 @@ public class CashRegister2
                 """);
         return input();
     }
+
     public static int input() {
         while (true) {
             try {
@@ -181,8 +179,8 @@ public class CashRegister2
         }
     }
 
-    public static int sellItem(final int[][]sales, final Date[] salesDate, final int itemIdToSell,
-                               final int amountToSell, final int [][] items) {
+    public static int sellItem(final int[][]sales, final Date[] salesDate, final int [][] items,
+                               final int itemIdToSell, final int amountToSell) {
         int totalPrice;
         for (int i = 0; i < items.length; i++) {
             if (items[i][0] == itemIdToSell) {
