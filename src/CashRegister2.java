@@ -6,8 +6,7 @@ import java.util.Random;
  *
  @author Your Name (Your LTU username)
  */
-public class CashRegister2
-{
+public class CashRegister2 {
     private static Scanner userInputScanner = new Scanner(System.in);
 
     /**
@@ -21,15 +20,19 @@ public class CashRegister2
 
     private static Random rand = new Random();
     private static final int ITEM_MAX_VALUE = 1000;
+    private static final int ITEM_MIN_VALUE = 100;
     private static final int ITEM_MAX_AMOUNT = 10;
+    private static final int DEFAULT_ITEM_ID = 999;
+
 
     public static void main(final String args[]) {
         int[][] items = new int[10][3];
-        Date[] salesDate = new Date[10];
+        Date[] salesDate = new Date[1000];
         int[][] sales = new int[1000][3];
+        int itemId = DEFAULT_ITEM_ID;
         while (true) {
-            int itemId = 1000;
             switch(menu()) {
+
                 case 1:
                     System.out.println("How many items do you want to add?");
                     int noOfItems = input();
@@ -115,7 +118,7 @@ public class CashRegister2
                 freeSlots++;
             }
         }
-        return freeSlots <= noOfItems;
+        return freeSlots < noOfItems;
     }
     public static int[][] extendArray(final int[][]items, final int noOfItems) {
         int[][] extendedArray = new int[items.length + noOfItems][3];
@@ -124,15 +127,15 @@ public class CashRegister2
     }
 
 
-    public static int[][] insertItems (final int[][]items, final int itemId, final int noOfItems) {
+    public static int[][] insertItems (final int[][]items, final int lastItemId, final int noOfItems) {
         int[][] itemList = items;
         if (checkFull(items, noOfItems)) {
             itemList = extendArray(items, noOfItems);
         }
-        int newItemId = itemId;
+        int newItemId = lastItemId + 1;
         for (int i = 0; i < noOfItems; i++) {
             int newItemUnits = rand.nextInt(ITEM_MAX_AMOUNT) + 1;
-            int newItemPrice = rand.nextInt(ITEM_MAX_VALUE) + 1;
+            int newItemPrice = rand.nextInt((ITEM_MAX_VALUE - ITEM_MIN_VALUE) + 1) + ITEM_MIN_VALUE;
             for (int j = 0; j < itemList.length; j++) {
                 if (itemList[j][0] == 0) {
                     itemList[j][0] = newItemId;
@@ -160,9 +163,10 @@ public class CashRegister2
                     items[i][0] = 0;
                     items[i][1] = 0;
                     items[i][2] = 0;
+                    return 0;
                 }
             }
-            return 0;
+            return -1;
         }
     }
 
@@ -179,7 +183,7 @@ public class CashRegister2
         }
     }
 
-    public static int sellItem(final int[][]sales, final Date[] salesDate, final int [][] items,
+    public static int sellItem(final int[][]sales, final Date[] salesDate, final int[][] items,
                                final int itemIdToSell, final int amountToSell) {
         int totalPrice;
         for (int i = 0; i < items.length; i++) {
@@ -187,6 +191,9 @@ public class CashRegister2
                 if (items[i][1] >= amountToSell) {
                     items[i][1] -= amountToSell;
                     totalPrice = items[i][2] * amountToSell;
+                } else {
+                    return items[i][1];
+                    }
                     for (int j = 0; j < sales.length; j++) {
                         if (sales[j][0] == 0) {
                             sales[j][0] = itemIdToSell;
@@ -196,11 +203,8 @@ public class CashRegister2
                             return 0;
                         }
                     }
-                } else {
-                    return items[i][1];
                 }
             }
-        }
         return -1;
     }
 
@@ -209,8 +213,8 @@ public class CashRegister2
     public static void printSales(final int[][]sales, final Date[] salesDate) {
         System.out.printf("%10s %10s %10s %10s\n", "Item", "Quantity", "Total", "Date" );
         for (int i = 0; i < sales.length && sales[i][0] != 0; i++) {
-            System.out.printf("%10s %10s %10s %10s\n",sales[i][0], sales[i][1],
-                    sales[i][2], salesDate[i] );
+            System.out.printf("%10s %10s %10s %10s\n",sales[i][0], sales[i][1]
+                    , sales[i][2], salesDate[i] );
         }
 
 
