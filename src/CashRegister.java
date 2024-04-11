@@ -1,9 +1,9 @@
 //
-//import java.util.Date;
-//import java.util.Scanner;
-//import java.util.Random;
+// import java.util.Date;
+// import java.util.Scanner;
+// import java.util.Random;
 //
-//public class CashRegister {
+// public class CashRegister {
 //    private static Scanner userInputScanner = new Scanner(System.in);
 //
 //    /**
@@ -52,7 +52,8 @@
 //                    if (result == -1) {
 //                        System.out.println("Could not find item, please try again!");
 //                    } else if (result > 0) {
-//                        System.out.println("Failed to sell specified amount (" + result + " items)" +
+//                        System.out.println("Failed to sell specified amount (" + result + "
+// items)" +
 //                                ", please try again!");
 //                    }
 //                    break;
@@ -71,7 +72,7 @@
 //
 //            }
 //        }
-//}
+// }
 //
 //    public static int menu() {
 //        System.out.println("""
@@ -86,17 +87,19 @@
 //                """);
 //        return input();
 //    }
-//    public static int input() {
+// works for one string, if typed for example aaa 8 doesnt work
+//  public static int input() {
 //        while (true) {
 //            try {
-//                String input = userInputScanner.next();
-//                if (input.equalsIgnoreCase("q")) {
-//                    return -1;
-//                } else {
-//                    if (!input.equals("0"))
-//                        return Integer.parseInt(input);
-//                    else {
-//                        System.out.println("Invalid input, please try again!");
+//                if (userInputScanner.hasNext()) {
+//                    String input = userInputScanner.next();
+//                    if (input.equalsIgnoreCase("q")) {
+//                        return -1;
+//                    } else {
+//                        if (!input.equals("0")) return Integer.parseInt(input);
+//                        else {
+//                            System.out.println("Invalid input, please try again!");
+//                        }
 //                    }
 //                }
 //            } catch (NumberFormatException e) {
@@ -104,7 +107,7 @@
 //                userInputScanner.nextLine();
 //            }
 //        }
-//
+//    }
 //    }
 //    public static boolean checkFull(final int[][] items, final int noOfItems) {
 //        int freeSlots = 0;
@@ -122,7 +125,8 @@
 //    }
 //
 //
-//    public static int[][] insertItems (final int[][]items, final int itemId, final int noOfItems) {
+//    public static int[][] insertItems (final int[][]items, final int itemId, final int noOfItems)
+// {
 //        int[][] itemList = items;
 //        if (checkFull(items, noOfItems)) {
 //            itemList = extendArray(items, noOfItems);
@@ -232,4 +236,4 @@
 //
 //    }
 //
-//}
+// }

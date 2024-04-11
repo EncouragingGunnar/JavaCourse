@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bb558c07-9003-4119-8384-ca245fe7a49f" name="Changes" comment="fixed for unit tests?">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CashRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CashRegister2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CashRegister2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +233,8 @@
       <workItem from="1712402474534" duration="1290000" />
       <workItem from="1712478066596" duration="3607000" />
       <workItem from="1712482342978" duration="1621000" />
-      <workItem from="1712812703498" duration="2630000" />
+      <workItem from="1712812703498" duration="3660000" />
+      <workItem from="1712821607983" duration="4119000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -250,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712507631034</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed for unit tests?">
+      <option name="closed" value="true" />
+      <created>1712816302500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712816302500</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
