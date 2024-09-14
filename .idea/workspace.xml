@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb558c07-9003-4119-8384-ca245fe7a49f" name="Changes" comment="fixed for unit tests?">
+      <change afterPath="$PROJECT_DIR$/src/AirportManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AirportManagement2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DiceGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SolarPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TaxiManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CashRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CashRegister2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CashRegister2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +74,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.AirportManagement2.executor&quot;: &quot;Run&quot;,
     &quot;Application.CashRegister.executor&quot;: &quot;Run&quot;,
     &quot;Application.CashRegister2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exam.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.RandomNumbers.executor&quot;: &quot;Run&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -84,13 +96,13 @@
     &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
     &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
     &quot;org.rust.first.attach.projects.stats&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CashRegister2">
-    <configuration name="CashRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CashRegister" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="AirportManagement2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AirportManagement2" />
       <module name="JavaCourse" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Exam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam" />
       <module name="JavaCourse" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,29 +129,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathematicalMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MathematicalMethods" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="JavaCourse" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathematicalMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MathematicalMethods" />
-      <module name="JavaCourse" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RandomNumbers" />
-      <module name="JavaCourse" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RandomNumbers" />
+    <configuration name="TaxiManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TaxiManagement" />
       <module name="JavaCourse" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,19 +145,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CashRegister2" />
-        <item itemvalue="Application.CashRegister" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.RandomNumbers" />
-        <item itemvalue="Application.MathematicalMethods" />
+        <item itemvalue="Application.TaxiManagement" />
+        <item itemvalue="Application.Exam" />
+        <item itemvalue="Application.AirportManagement2" />
+        <item itemvalue="Application.CashRegister2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19072.14" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19072.14" />
       </set>
     </attachedChunks>
   </component>
@@ -235,6 +233,21 @@
       <workItem from="1712482342978" duration="1621000" />
       <workItem from="1712812703498" duration="3660000" />
       <workItem from="1712821607983" duration="4119000" />
+      <workItem from="1712826448405" duration="209000" />
+      <workItem from="1712827908215" duration="5918000" />
+      <workItem from="1712993433844" duration="4998000" />
+      <workItem from="1713000305970" duration="62000" />
+      <workItem from="1714757410278" duration="924000" />
+      <workItem from="1715836906075" duration="2485000" />
+      <workItem from="1715839734563" duration="744000" />
+      <workItem from="1715862199264" duration="874000" />
+      <workItem from="1715927797724" duration="74000" />
+      <workItem from="1715927955789" duration="21902000" />
+      <workItem from="1717767854064" duration="1190000" />
+      <workItem from="1725891020867" duration="122000" />
+      <workItem from="1725891381237" duration="261000" />
+      <workItem from="1725893376926" duration="108000" />
+      <workItem from="1726229896708" duration="4156000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -260,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712816302500</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed for unit tests?">
+      <option name="closed" value="true" />
+      <created>1712826474774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712826474774</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +295,18 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
